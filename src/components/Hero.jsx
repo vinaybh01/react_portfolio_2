@@ -22,8 +22,16 @@ const Hero = () => {
         <div className="pb-16 px-6 pt-5" data-aos="fade-down">
           <h2>{hero.title}</h2>
           <br />
-          <div className="flex justify-end">
-            <button className="btn">{hero.btnText}</button>
+          <div className="flex justify-end  mr-2">
+            <a href="https://www.linkedin.com/in/vinay-b-h-06a09825b/">
+              <button className="btn">{hero.btnText}</button>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/13ZQ64OesvlGnalROfE-LgGKBAFTsbkTy/view?usp=sharing"
+              className="ml-2"
+            >
+              <button className="btn">Resume</button>
+            </a>
           </div>
           <div className="flex flex-col gap-10 mt-10">
             {hero.hero_content.map((content, i) => (
@@ -34,7 +42,7 @@ const Hero = () => {
                 className={`flex items-center w-80 gap-5
             ${i === 1 && " flex-row-reverse text-right"}  `}
               >
-                <h3>{content.count}</h3>
+                {/* <h3>{content.count}</h3> */}
                 <p>{content.text}</p>
               </div>
             ))}

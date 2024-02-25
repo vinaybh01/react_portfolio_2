@@ -8,31 +8,31 @@ import Testimonials from "./components/Testimonials";
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
 import { useEffect } from "react";
-// Animation package
-import Aos from "aos";
-import "aos/dist/aos.css";
+// Animation package  
+// import Aos from "aos";
+// import "aos/dist/aos.css";
 
 const App = () => {
-  useEffect(() => {
-    Aos.init({
-      duration: 1800,
-      offset: 100,
-      disable: "mobile",
-    });
-  }, []);
+  // useEffect(() => {
+  //   Aos.init({
+  //     duration: 1800,
+  //     offset: 100,
+  //     disable: "mobile",
+  //   });
+  // }, []);
   return (
     <div className="">
       <Navbar />
       <Hero />
       <Skills />
+      {/* <Projects /> */}
+
       <Service />
-      <Projects />
-      <Testimonials />
-      <Hireme />
+      {/* <Testimonials /> */}
+      {/* <Hireme /> */}
       <Contact />
       <footer className="p-3 text-center">
-        <h6 className="mb-3">JOHN ALEX</h6>
-        <p>codeaprogram © All CopyRights Reserved 2022</p>
+        <h6 className="mb-3">VINAY BH</h6>
       </footer>
     </div>
   );

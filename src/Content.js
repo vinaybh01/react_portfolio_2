@@ -1,14 +1,29 @@
 // import images
-import Hero_person from "./assets/images/Hero/person.png";
+import Hero_person from "./assets/images/Hero/person2.png";
+import Hero_pic from "./assets/images/Hero/bitemoji.png";
 
-import figma from "./assets/images/Skills/figma.png";
-import sketch from "./assets/images/Skills/sketch.png";
+import tail from "./assets/images/Skills/tailwind-css.png";
 import ps from "./assets/images/Skills/ps.png";
+import mongo from "./assets/images/Skills/mongodb.png";
+import html from "./assets/images/Skills/html5.png";
+import java from "./assets/images/Skills/java.png";
+import js from "./assets/images/Skills/javascript.png";
+import ex from "./assets/images/Skills/express.png";
+import css from "./assets/images/Skills/css3.png";
+import boot from "./assets/images/Skills/bootstrap.png";
 import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
 
-import services_logo1 from "./assets/images/Services/logo1.png";
+import pic1 from "./assets/images/Services/recipeweb.png";
+import pic2 from "./assets/images/Services/course.png";
+import pic3 from "./assets/images/Services/jobportal.png";
+import pic4 from "./assets/images/Services/dis.png";
+import pic5 from "./assets/images/Services/ecommerce.png";
+import pic6 from "./assets/images/Services/travel.png";
+import pic7 from "./assets/images/Services/github.png";
+import pic8 from "./assets/images/Services/twitter.png";
+
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
@@ -26,12 +41,22 @@ import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
 
 // import icons from react-icons
-import { GrMail } from "react-icons/gr";
-import { MdArrowForward, MdCall } from "react-icons/md";
-import { BsInstagram } from "react-icons/bs";
+import {
+  GrGithub,
+  GrLinkedin,
+  GrMail,
+  GrProjects,
+  GrTwitter,
+} from "react-icons/gr";
+import { MdArrowForward, MdCall, MdPersonalInjury } from "react-icons/md";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
-import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
+import {
+  RiServiceLine,
+  RiProjectorLine,
+  RiSkullFill,
+  RiProjector2Line,
+} from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 
 export const content = {
@@ -42,94 +67,153 @@ export const content = {
     },
     {
       link: "#skills",
-      icon: BiUser,
+      icon: RiProjector2Line,
     },
     {
       link: "#services",
-      icon: RiServiceLine,
+      icon: GrProjects,
     },
-    {
-      link: "#projects",
-      icon: RiProjectorLine,
-    },
+
     {
       link: "#contact",
-      icon: MdOutlinePermContactCalendar,
+      icon: BiUser,
     },
   ],
   hero: {
-    title: "Web Developer",
-    firstName: "JOHN",
-    LastName: "ALEX",
-    btnText: "Hire Me",
+    title: "MERN Stack Web Developer",
+    firstName: "VINAY",
+    LastName: "B H",
+    btnText: "Connect Me",
     image: Hero_person,
     hero_content: [
       {
         count: "8+",
-        text: "Years of Experinse in Web development",
+        text: "LET'S BUILD SOMETHING TOGETHER",
       },
       {
         count: "20+",
-        text: "Projects Worked in my career",
+        text: "I am a passionate MERN STACK DEVELOPER, I recently completed my BCA degree in Computer Applications. I'm focused on building a fullstack web applications while learning & exploring other technologies.",
       },
     ],
   },
   skills: {
     title: "Skills",
-    subtitle: "MY TOP SKILLS",
+    subtitle: "Technologies I use in my development",
     skills_content: [
       {
-        name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        logo: figma,
+        name: "React js",
+        logo: reactjs,
+        url: "https://react.dev/",
       },
       {
         name: "Node js",
-        para: "Lorem ipsum text  dummy",
+        // para: "Lorem ipsum text  dummy",
         logo: nodejs,
+        url: "https://nodejs.org/en",
       },
       {
-        name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
-        logo: ps,
+        name: "Express js",
+        // para: "Lorem ipsum text  dummy",
+        logo: ex,
+        url: "https://expressjs.com/",
       },
       {
-        name: "React js",
-        para: "Lorem ipsum text  dummy",
-        logo: reactjs,
+        name: "MongoDB",
+        // para: "Lorem ipsum text  dummy",
+        logo: mongo,
+        url: "https://www.mongodb.com/",
       },
       {
-        name: "Sketch",
-        para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        name: "JavaScript",
+        // para: "Lorem ipsum text  dummy",
+        logo: js,
+        url: "https://www.w3schools.com/js/",
       },
       {
-        name: "Python",
-        para: "Lorem ipsum text  dummy",
-        logo: python,
+        name: "HTML",
+        // para: "Lorem ipsum text  dummy",
+        logo: html,
+        url: "https://www.w3schools.com/html/",
+      },
+      {
+        name: "CSS",
+        // para: "Lorem ipsum text  dummy",
+        logo: css,
+        url: "https://www.w3schools.com/css/",
+      },
+      {
+        name: "BootStrap",
+        // para: "Lorem ipsum text  dummy",
+        logo: boot,
+        url: "https://getbootstrap.com/",
+      },
+      {
+        name: "Tailwind",
+        // para: "Lorem ipsum text  dummy",
+        logo: tail,
+        url: "https://tailwindcss.com/",
+      },
+      {
+        name: "Java",
+        // para: "Lorem ipsum text  dummy",
+        logo: java,
+        url: "https://www.java.com/en/",
       },
     ],
     icon: MdArrowForward,
   },
   services: {
-    title: "Services",
-    subtitle: "WHAT I OFFER",
+    title: "Projects",
+    subtitle: "Take a look at my projects:",
     service_content: [
       {
-        title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo1,
+        title: "Recipe Website",
+        para: "A recipe website where people can share and discover recipes. It creates a lively community of food lovers, with an easy-to-use design, a variety of recipes, and a sense of connection through cooking. TECH STACK - REACT, EXPRESSJS, NODEJS, MONGODB.",
+        logo: pic1,
+        demo: "https://recipe-app-h06o.onrender.com",
+        code: "https://github.com/vinaybh01/recipe-web-frontend",
       },
       {
-        title: "ui / ux DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo2,
+        title: "Course Selling & Buying Website",
+        para: "A course platform where admins effortlessly manage courses - creating, editing, and deleting. Users sign up to explore and purchase courses, fostering a streamlined learning experience. TECH STACK- REACT, EXPRESSJS, NODEJS, MONGODB.",
+        logo: pic2,
+        demo: "https://course-app-mern.onrender.com",
+        code: "https://github.com/vinaybh01/course-selling-app-client",
       },
       {
-        title: "PhotoShop Editing",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo3,
+        title: "Job Portal",
+        para: "Simplifying job searches, this platform allows users to effortlessly filter and apply for jobs. Admins, on the other hand, can efficiently create, edit, and delete job listings for their company. TECH STACK - REACT, EXPRESSJS, NODEJS, MONGODB, TAILWIND.",
+        logo: pic3,
+        demo: "https://job-portal-app-3puy.onrender.com",
+        code: "https://github.com/vinaybh01/job-portal-frontend",
       },
+      {
+        title: "Disaster Relief",
+        para: "Enabling seamless connection and support in times of disaster through a comprehensive web application, uniting relief organizations, volunteers, and victims. TECH STACK - HTML, CSS, JAVASCRIPT, BOOTSTRAP.",
+        logo: pic4,
+        demo: "https://ybhumi.github.io/disaster-relief",
+        code: "https://github.com/vinaybh01/disaster-relief",
+      },
+      {
+        title: "E-Commerce Website",
+        para: " An eCommerce website I built, providing a user-friendly and visually appealing platform for online shopping. TECH STACK - REACTJS.",
+        logo: pic5,
+        demo: "https://vinaybh0107-ecommerce.netlify.app",
+        code: "https://github.com/vinaybh01/ecommerce-website",
+      },
+      {
+        title: "Travel Website",
+        para: "A travel website that allows users to explore various destinations, providing a visually appealing platform to discover and learn about different places, inspiring their wanderlust.TECH STACK - REACT, EXPRESSJS, NODEJS, MONGODB.",
+        logo: pic6,
+        demo: "https://vinaybh0107-travel-website.netlify.app",
+        code: "https://github.com/vinaybh01/travelling-website",
+      },
+
+      // {
+      //   title: "PhotoShop Editing",
+      //   para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+      //   logo: services_logo3,
+      // },
     ],
   },
   Projects: {
@@ -190,23 +274,34 @@ export const content = {
     btnText: "Hire Me",
   },
   Contact: {
-    title: "Contect Me",
-    subtitle: "GET IN TOUCH",
+    title: "Contact Me",
+    subtitle: "Get in touch",
     social_media: [
       {
-        text: "codeaprogram@gmail.com",
+        text: "vinaybh0107@gmail.com",
         icon: GrMail,
-        link: "mailto:codeaprogram@gmail.com",
+        link: "mailto:vinaybh0107@gmail.com",
       },
       {
-        text: "+91 1234 56778",
+        text: "+91 7022853572",
         icon: MdCall,
-        link: "https://wa.me/1234567890",
+        link: "https://wa.me/7022853572",
       },
       {
-        text: "codeaprogram",
-        icon: BsInstagram,
-        link: "https://www.instagram.com/codeaprogram/",
+        text: "Vinay",
+        icon: GrLinkedin,
+        link: "https://www.linkedin.com/in/vinay-b-h-06a09825b/",
+      },
+
+      {
+        text: "vinaybh01",
+        icon: GrGithub,
+        link: "https://github.com/vinaybh01",
+      },
+      {
+        text: "VinayBH",
+        icon: GrTwitter,
+        link: "https://twitter.com/VinayBH1554211",
       },
     ],
   },
